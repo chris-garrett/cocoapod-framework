@@ -1,0 +1,8 @@
+
+PROJECT="CocoaPod Framework"
+
+desc "Linting #{PROJECT}"
+task :lint do
+    sh("pod spec lint FrameworkExample.podspec")
+end
+
