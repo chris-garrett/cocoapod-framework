@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Chris Garrett" => "chris@nesteggs.ca" }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/chris-garrett/cocoapod-framework.git", :commit => '6a79bf9f6541b60d8ac6bfe3cb0a2ac2bf58d516'}
+  s.source       = { :git => "https://github.com/chris-garrett/cocoapod-framework.git", :commit => '575206edfb5656525eccf9bf98491993713cd645'}
 #, :tag => "0.0.1" }
 
   s.source_files  = 'FrameworkExample/**/*.{h,m}'
@@ -26,5 +26,14 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   # s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2' }
   # s.dependency 'JSONKit', '~> 1.4'
+
+  s.subspec 'XCTest' do |xctest|
+      xctest.framework = 'XCTest'
+      xctest.source_files = 'FrameworkExampleTests/**/*.{h,m}'
+      xctest.requires_arc = true
+      xctest.prefix_header_contents = <<-EOS
+                                      #import <XCTest/XCTest.h>
+                                      EOS
+  end
 
 end
