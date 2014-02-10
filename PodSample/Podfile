@@ -2,7 +2,7 @@
 # platform :ios, "6.0"
 
 target "PodSample" do
-    pod '', :git => 'https://github.com/chris-garrett/cocoapod-framework.git', :branch => 'new-framework'
+    pod 'FrameworkExample', :git => 'https://github.com/chris-garrett/cocoapod-framework.git', :branch => 'new-framework'
 end
 
 target "PodSampleTests" do
