@@ -11,10 +11,8 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Chris Garrett" => "chris@nesteggs.ca" }
   s.platform     = :ios, '7.0'
-  s.source       = { :git => "https://github.com/chris-garrett/cocoapod-framework.git", 
-                     :branch => 'new-framework'
-                     #:commit => '575206edfb5656525eccf9bf98491993713cd645'}
-                     #:tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/chris-garrett/cocoapod-framework.git", :commit => '575206edfb5656525eccf9bf98491993713cd645'}
+#, :tag => "0.0.1" }
 
   s.source_files  = 'FrameworkExample/**/*.{h,m}'
   s.exclude_files = 'FrameworkExample/Exclude'
