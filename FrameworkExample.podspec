@@ -1,3 +1,17 @@
+Pod::Spec.new do |s|
+  s.name         = "FrameworkExample"
+  s.version      = "0.0.1"
+  s.summary      = "CocoaPod Framework example"
+  s.description  = <<-DESC
+                   CocoaPod Framework example based on instructions from: 
+
+                   https://github.com/jverkoey/iOS-Framework
+                   DESC
+  s.homepage     = "https://github.com/chris-garrett/cocoapod-framework"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.author       = { "Chris Garrett" => "chris@nesteggs.ca" }
+  s.platform     = :ios, '7.0'
+  s.source       = { :git => "https://github.com/chris-garrett/cocoapod-framework.git", 
                      :branch => 'new-framework',
                      #:commit => '575206edfb5656525eccf9bf98491993713cd645',
                      #:tag => "0.0.1" 
